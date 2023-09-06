@@ -51,7 +51,7 @@ const Video = () => {
         </div>
         <div className="flex items-center justify-center">
           {videoData.map((video, index) => (
-            <div key={video.id.videoId}>
+            <div key={video.id.videoId} className='m-2'>
               <iframe
                 title={`vid${index + 1}`}
                 width="325"
