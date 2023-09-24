@@ -29,10 +29,13 @@ const Navbar = () => {
         },
     ];
 
-    return <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
-        <div>
+    return(
+
+     <header className="padding-x py-4 absolute z-10 w-full text-white bg-black">
+        <nav className="flex justify-between items-center max-container">
+        <a href="/">
             <h1 className="text-5xl font-signature ml-2">Divasraj</h1>
-        </div>
+        </a>
         <ul className="hidden md:flex ">
             {links.map(({id,link}) => (
                 <li key={id} className="px-4 cursor-pointer capitalize font-medium 
@@ -62,8 +65,9 @@ const Navbar = () => {
             )
         }
 
-        
-    </div>
+</nav>
+    </header>
+    )
 }
 
 export default Navbar;

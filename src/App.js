@@ -9,17 +9,25 @@ import Video from "./components/Video";
 import Cta from "./components/Cta";
 function App() {
   return (
-    <div>
+    <main className="relative">
       <Navbar />
-      <Home />
-      <About />
+      <section className="xl:padding-l wide:padding-r padding-b bg-black">
+        <Home />
+      </section>
+      <section className="xl:padding-l wide:padding-r padding-b bg-black">
+        <About />
+      </section>
+      
       <Video />
       <Portfolio />
-      <Experience />
+      <section className="xl:padding-l wide:padding-r padding-b bg-black">
+        <Experience />
+      </section>
+      
       <SocialLinks/>
       <Cta />
       <Contact />
-    </div>
+    </main>
   );
 }
 
