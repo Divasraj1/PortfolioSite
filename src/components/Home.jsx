@@ -6,7 +6,8 @@ import TypewriterComponent from 'typewriter-effect'
 
 const Home = () => {
     return (
-      <section className='text-white home w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container'>
+      <section className='text-white home w-full flex xl:flex-row flex-col justify-center min-h-screen max-container'>
+        
         <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28">
             <h2 className='text-5xl font-montserrat '>I'm a</h2>
             <div className='text-6xl font-montserrat text-transparent bg-clip-text font-bold bg-gradient-to-r from-purple-400 to-pink-600'>
@@ -45,6 +46,7 @@ const Home = () => {
           className='object-contain'
         />
       </div>
+      
       </section>
     )
   }
