@@ -7,6 +7,7 @@ import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Video from "./components/Video";
 import Cta from "./components/Cta";
+import CompletedProjects from "./components/CompletedProjects";
 function App() {
   return (
     <main className="relative">
@@ -19,6 +20,7 @@ function App() {
       </section>
       
       <Video />
+      <CompletedProjects />
       <Portfolio />
       <section className="xl:padding-l wide:padding-r padding-b bg-black">
         <Experience />
